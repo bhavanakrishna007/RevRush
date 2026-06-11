@@ -1,0 +1,357 @@
+body{
+    margin: 0;
+    background : #050505;
+}
+
+/*Tablets*/
+@media(max-width:1024px){
+    .car1{
+        width:90%;
+    }
+}
+
+/*Mobile*/
+@media(max-width:768px){
+    .car1{
+        width:95%;
+    }
+}
+
+/*Small phones*/
+@media(max-width:480px){
+    .car1{
+        width:100%;
+    }
+}
+
+/*Laptop*/
+.car1{
+    width:100%;
+    height:70vh;
+    object-fit:cover;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.box1{
+    position: absolute;
+    top: 18%;
+    left: 6%;  
+}
+.white{
+    font-size: 7rem;
+    color: azure;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.red{
+    font-size: 7rem;
+    color: rgb(221, 0, 0);
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.bio{
+    font-size: 20px;
+    color: #B8B8B8;
+    letter-spacing: 3px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    padding: 0%;
+    margin-left: 3%;
+    margin-bottom: -5%;
+    margin-top: 5%;
+}
+hr{
+    display: block;
+    margin-top: -5%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    border-left: 0;
+    padding-left: 0;
+    width:  100px;
+    border-color: rgb(221, 0, 0);
+
+}
+.bio2{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #D6D6D6;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    margin-top: -3%;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo .white,
+.logo .red{
+    font-size: 1.5rem;
+}
+.nav-links{
+    display:flex;
+    gap:50px;
+    list-style:none;
+    margin-left: auto;
+}
+
+.home, .category, .featured, .stories, .about{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15pt;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);    
+}
+
+.subsection-featured, .subsection-categories{
+    display: inline-block;
+    color: azure;
+    font-family: "Sintony", sans-serif;
+    transform: scaleY(1.1);
+    font-weight: 550;
+    font-size: 20px;
+    margin: 1rem;
+    padding: 1rem 1rem, 1rem, 0;
+    padding-left: 9px;
+    border: 4px rgb(221, 0, 0);
+    border-left-style: solid;  
+
+}
+
+.featured-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.5fr;
+    grid-template-rows: 200px 200px;  
+    padding: 0px 30px 30px 30px;    
+    gap: 40px;
+}
+.featured-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-style: outset;
+    border: 2px solid rgb(255,255,255,.08); 
+}
+
+.img2{
+    position: relative;
+    grid-column: span 2;
+}
+
+.img3{
+    position: relative;
+    order: 1;
+    grid-column: span 2;
+}
+
+.img4{
+    position: relative;
+    grid-row: span 2;
+}
+
+.img2-name, .img3-name, .img4-name{
+    position: absolute;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.3rem;
+    transform: scaleY(1.1);
+    text-shadow: 0 2px 10px rgba(0,0,0,.8);
+    letter-spacing: 2px;
+    font-weight: 550;
+    color: #E8E6E3;
+    top: 30px;
+    left: 15px;
+}
+
+.img2-specs, .img3-specs{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(232,230,227,.75);
+    text-transform: uppercase;
+    left: 20px;
+    top: 65px;
+}
+
+.img4-specs{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(232,230,227,.75);
+    text-transform: uppercase;
+    top:70px;
+    left: 20px;
+}
+
+.view-car{
+    position: absolute;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-optical-sizing: auto;
+    color: #E8E6E3;
+    border:2px rgba(232,230,227,.3);
+    top: 60%;
+    left: 20px;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.view-car:hover{
+    letter-spacing: 3px;
+}
+.img5, .img6, .img7, .img8, .img9, .img10{
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+.categories-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 340px;
+    gap: 4px;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+
+.categories-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories-container > div{
+    flex: 1;
+    overflow: hidden;
+}
+
+.category-title{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.30rem;
+    transform: scaleY(1.1);
+    text-shadow: 0 2px 10px rgba(0,0,0,.8);
+    letter-spacing: 2px;
+    font-weight: 550;
+    color: #E8E6E3;
+}
+
+.img5-specs, .img7-specs, .img9-specs{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(232,230,227,.75);
+    text-transform: uppercase;
+    left: 20px;
+    top: 25%;
+}
+
+.img6-specs, .img8-specs, .img10-specs{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgba(232,230,227,.75);
+    text-transform: uppercase;
+    left: 20px;
+    top: 20%;
+}
+
+.explore{
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: scaleY(1);
+    color: #E8E6E3;
+    top: 45%;
+    left: 20px;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.explore:hover{
+    letter-spacing: 3px;
+}
+
+#footer{
+    background: #0B0B0B;
+    border-top: 1px solid #151515;
+    padding: 1.5rem .5rem;
+    text-align: center;
+}
+
+.white1,
+.red1{
+    font-size: 3rem;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.white1{
+    color: azure;
+}
+
+.red1{
+    color: rgb(221, 0, 0);
+}
+
+.logo-specs{
+    color: #B8B8B8;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 1rem auto;
+}
+
+.copyrights{
+    color: #8A8A8A;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.logo-specs1{
+    color: #8A8A8A;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    margin: 30px auto 0;
+}
+
+.footer-line{
+    width: 70px;
+    height: 2px;
+    background: rgb(221, 0, 0);
+    margin: 0.5rem auto 1.5rem;
+}
