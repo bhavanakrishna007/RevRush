@@ -102,3 +102,54 @@ body{
     max-width: 400px;
 }
 
+.about-section{
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+.about{
+    font-family: "Sintony", sans-serif;
+    transform: scaleY(1.1);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:azure;
+    
+}
+
+hr{
+    display: block;
+    margin-left: 0;
+    border-left: 0;
+    padding-left: 0;
+    width:  55px;
+    padding-top: 2px;
+    border-color: rgb(221, 0, 0);
+}
+
+.about-points{
+    list-style: none;
+    padding-left: 0;
+    width: 480px;   
+}
+
+.about-points li{
+    font-family: "Manrope", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #b5b2b2f4;
+    line-height: 2;
+    position: relative;
+    padding-left: 25px;
+}
+
+.about-points li::before {
+    content: "❯";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 14px;
+    color: rgb(221, 0, 0);
+}
+
+
+
