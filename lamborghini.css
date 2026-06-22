@@ -107,14 +107,13 @@ body{
     margin-top: 10px;
     width: 480px;
 }
-.about{
+.title{
     font-family: "Sintony", sans-serif;
     transform: scaleY(1.1);
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 2px;
     color:azure;
-    
 }
 
 hr{
@@ -195,4 +194,100 @@ hr{
 
 .thumbnails img:hover{
     transform:scale(1.05);
+}
+
+.car-specs{
+    padding: 1.5rem;
+    background:#050505;
+}
+
+.spec-container{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+.tech-specs{
+    width:60%;
+}
+
+.spec-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:40px;
+    position:relative;
+    margin-top:20px;
+}
+
+.spec-grid::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    bottom:0;
+    width:1px;
+    background:rgba(255,255,255,0.12);
+}
+
+.spec{
+    display:grid;
+    grid-template-columns:25px 120px 1fr;
+    align-items:center;
+    min-height:50px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.icon{
+    color:#ff0000;
+    font-size:16px;
+}
+
+.label{
+    color:#cfcfcf;
+    font-size:14px;
+}
+
+.value{
+    color:white;
+    font-size:14px;
+}
+
+.performance {
+    width: 40%;
+    padding-left:20px;
+
+}
+
+.bar {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bar span {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: aliceblue;
+}
+
+.track {
+    width: 100%;
+    height: 7px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: red;
+    border-radius: 10px;
+}
+
+.tech-specs,
+.performance{
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:12px;
+    padding:30px;
+    background:rgba(255,255,255,0.01);
 }
