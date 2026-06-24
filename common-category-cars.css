@@ -102,37 +102,9 @@ body{
     border: 2px solid rgb(255,255,255,.08); 
 }
 
-.car-1-jdm{
+.car{
     position: relative;
     grid-column: span 1;
-}
-
-.car-2-jdm{
-    position: relative;
-    grid-column: span 1;
-}
-
-.car-3-jdm{
-    position: relative;
-    grid-column: span 1;
-}
-
-.car-4-jdm{
-    position: relative;
-    order: 1;
-    grid-column: span 1;
-}
-
-.car-5-jdm{
-    position: relative;
-    grid-column: span 1;
-    order: 2;
-}
-
-.car-6-jdm{
-    position: relative;
-    grid-column: span 1;
-    order: 3;
 }
 
 .brand{
